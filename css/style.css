@@ -141,12 +141,15 @@ body{
     border-radius: 4px;
     cursor: pointer;
     transition: .3s;
-}
-.side-navlist a{
     display: flex;
     align-items: center;
     gap: 0 25px;
+}
+.side-navlist a{
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
 }
 .side-navlist:hover{
     background-color: rgb(235, 232, 232);
@@ -200,4 +203,105 @@ body{
 .yt-date{
     color: rgb(112, 112, 112);
     font-size: 10px;
+}
+
+/* Media Quries */
+@media screen and (max-width: 1096px) {
+    .top-categories{
+        gap: 0 10px;
+    }
+    .nav-search-input{
+        width: 300px;
+    }
+    .navbar .nav-search{
+        flex-grow: 1;
+        margin: auto;
+    }
+    .navbar .nav-logo{
+        flex-grow: 1;
+    }
+    .navbar .nav-profile{
+        flex-grow: 1;
+    }
+  }
+
+  @media screen and (max-width: 988px) {
+    .side-navlist a{
+        display: none;
+    }
+    .mobile-none{
+        display: none;
+    }
+    .side-navmenu a{
+        display: none;
+    }
+    .side-navbar{
+        width: fit-content;
+    }
+    .yt-videos{
+        margin: 150px 0 40px 140px;
+    }
+    .top-categories{
+        left: 10%;
+    }
+    .top-categories a:nth-child(even){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 748px) {
+    .nav-profile i{
+        display: none;
+    }
+}
+@media screen and (max-width: 610px) {
+    .top-categories{
+       margin-left: 20px;
+    }
+    .nav-logo img{
+        width: 70px;
+    }
+}
+@media screen and (max-width: 571px) {
+    .nav-logo i{
+        display: none;
+    }
+    .nav-search-input input{
+        width: 200px;
+    }
+    .nav-mike{
+        margin:  0 10px  0 -50px;
+    }
+}
+@media screen and (max-width: 526px) {
+    .side-navbar{
+        display: none;
+    }
+    .yt-videos{
+        margin: 150px auto 20px;
+    }
+    .videos-list{
+        justify-content: center;
+    }
+    .top-categories{
+        left: 0;
+        padding: 20px 0;
+    }
+    .top-categories a{
+        padding: 0 8px;
+    }
+    .top-categories a:nth-child(5){
+        display: none;
+    }
+    .nav-search-input input{
+        padding: 4px 8px;
+        width: 120px;
+        margin-left: 15px;
+    }
+    .nav-mike{
+        margin:  0 10px  0 -120px;
+    }
+    .navbar{
+        padding: 10px 20px;
+    }
 }
